@@ -1,0 +1,838 @@
+h1, h2, h3{
+    text-align: center;
+}
+
+h2 span{
+    color: red;
+}
+
+body {
+    --bs-body-font-family: var(--bs-font-monospace);
+    --bs-body-line-height: 1.4;
+    --bs-body-bg: var(--bs-gray-100);
+  }
+  
+  .table {
+    --bs-table-color: var(--bs-gray-600);
+    --bs-table-bg: var(--bs-gray-100);
+    --bs-table-border-color: transparent;
+  }
+  .col4{
+    color: red;
+  }
+
+  .col-sm-4{
+
+    left: 256px;
+    right: 6873px;
+  }
+
+
+.image {
+  position: absolute;
+  top: auto ; /* Ajustez cette valeur pour changer la position verticale */
+  right: auto; /* Ajustez cette valeur pour changer la position horizontale */
+}
+
+.grid-container {
+  height: 350px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de taille égale */
+  gap: 10px; /* Espacement entre les éléments de la grille */
+  color: #000;
+
+  & div{
+    background-size: cover;
+  }
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée trois colonnes de taille égale */
+  gap: 10px; /* Espacement entre les éléments de la grille */
+  color: #000;
+}
+
+/* Vous pouvez utiliser la propriété 'grid-row' pour étendre un élément sur plusieurs lignes */
+.grid-item3:nth-child(4) {
+  grid-row: span 4;
+}
+
+/* Tu pouvez utiliser la propriété 'grid-column' pour étendre un élément sur plusieurs colonnes */
+.grid-item3:nth-child(1) {
+  grid-column: span 2;
+}
+
+
+.grid-boxes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-size: 20px;
+
+  grid-template-rows: minmax(100px auto);
+  width: 80%;
+  margin: auto;
+
+  font-size: 22px;
+
+  & div{
+    border-radius: 20px;
+    height: 250px;
+    background-size: cover;
+  }
+  
+  .box-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    height: auto;
+  }
+  
+}
+
+.grid-boxes4
+  
+.grid-boxes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-rows: minmax(100px auto);
+  width: 80%;
+  margin: auto;
+
+  font-size: 22px;
+
+  & div{
+    border-radius: 20px;
+    height: 250px;
+    background-size: cover;
+  }
+  
+  .box-1{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    height: auto;
+  }
+
+  .box-2{
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+    height: auto;
+
+  }
+
+  .box-3{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    height: auto;
+  }
+
+  .azxx{
+width: 30px%;
+height: 30px;
+font-weight: bold;
+  }
+
+  .box-4{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+    height: auto;
+  }
+  
+  
+}
+
+.zxc{
+  text-align: center;
+}
+
+
+.grid-boxes3{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-template-rows: minmax(100px auto);
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
+  border: #B2B3AE;
+
+  & div{
+    border-radius: 20px;
+    height: 250px;
+    background-size: cover;
+  }
+  
+  .box-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 4;
+    height: auto;
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+
+  .box-2{
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 4;
+    height: auto;
+  }
+  
+}
+
+
+
+
+.grid-boxes2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-rows: minmax(100px auto);
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+
+  & .box{
+    border-radius: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .div_1{
+    width: 90px !important;
+    height: 90px;
+    background-color: white;
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  .div_2{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & p{
+      margin: 0;
+    }
+  }
+
+  .box-1{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span ;
+    height: auto;
+    border-radius: 20px;
+    
+    
+  }
+
+  .box-2{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+    height: auto;
+    
+    border-radius: 20px;
+
+  }
+  
+  .box-5{
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 2;
+    height: auto;
+    
+    border-radius: 20px;
+
+  }
+
+  .box-3{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    height: auto;
+    border-radius: 10px;
+    
+  }
+
+  .box-4{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2;
+    height: auto;
+  }
+  
+}
+
+.grid-item {
+  background-color: red; /* Couleur de fond des éléments de la grille */
+  padding: 20px; /* Espacement à l'intérieur des éléments de la grille */
+  text-align: center; /* Centrer le texte à l'intérieur des éléments de la grille */
+  color: #000;
+  border-radius: 10px;
+}
+
+.grid-item2 {
+  background-color:gray; /* Couleur de fond des éléments de la grille */
+  padding: 20px; /* Espacement à l'intérieur des éléments de la grille */
+  text-align: center; /* Centrer le texte à l'intérieur des éléments de la grille */
+  color: #000;
+  border: #000;
+  border-radius: 10px;
+}
+
+
+.img1{
+  width: 300px;
+  height: 200px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de taille égale */
+  grid-auto-rows: minmax(10px, auto); /* Définit la hauteur minimale des lignes */
+  gap: 10px; /* Espacement entre les éléments de la grille */
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de taille égale */
+  grid-auto-rows: minmax(100px, auto); /* Définit la hauteur minimale des lignes */
+  gap: 10px; /* Espacement entre les éléments de la grille */
+}
+
+
+.grid-item {
+  background-color: #ddd; /* Couleur de fond des éléments de la grille */
+  padding: 20px; /* Espacement à l'intérieur des éléments de la grille */
+  text-align: center; /* Centrer le texte à l'intérieur des éléments de la grille */
+}
+
+/* Vous pouvez utiliser la propriété 'grid-row' pour étendre un élément sur plusieurs lignes */
+.grid-item:nth-child(1) {
+  grid-row: span 2;
+}
+
+/* Tu pouvez utiliser la propriété 'grid-column' pour étendre un élément sur plusieurs colonnes */
+.grid-item:nth-child(1) {
+  grid-column: span 1;
+}
+
+.grid-item2:nth-child(2) {
+  grid-row: span 1;
+}
+
+.grid-item2:nth-child(1){
+
+grid-column-start: span 1;
+}
+
+
+
+
+.grid-item2:nth-child(1,1,1) {
+  grid-row: span 1;
+}
+
+
+/* Vous pouvez utiliser la propriété 'grid-column' pour étendre un élément sur plusieurs colonnes */
+.grid-item2:nth-child(1,1,1) {
+  grid-column: span 1;
+}
+
+
+
+img{
+  width: 50px;
+}
+
+.panel {
+  border: 0px solid #000; /* Bordure du panneau */
+  border-radius: 10px; /* Bordures arrondies */
+  padding: 10px; /* Espace intérieur du panneau */
+  margin: 10px ; /* Espace extérieur du panneau */
+  display: flex; /* Pour aligner les sections côte à côte */
+}
+.section1 {
+  flex: 1; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+  margin: 10px; /* Espace extérieur de chaque section */
+  border: 1px solid #000; /* Bordure de chaque section */
+  border-radius: 10px; /* Bordures arrondies de chaque section */
+  background-color: #FD92AC;
+}
+
+.section2 {
+  flex: 1; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+  margin: 10px; /* Espace extérieur de chaque section */
+  border: 1px solid #000; /* Bordure de chaque section */
+  border-radius: 10px; /* Bordures arrondies de chaque section */
+  background-color:  #FCAC01;
+}
+.pin{
+  color: #933BF2;
+}
+.b{
+  text-align: justify;
+  font-size: 20px;
+
+}
+
+.a{
+  text-align: left;
+}
+
+.section3 {
+  flex: 1; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+  margin: 10px; /* Espace extérieur de chaque section */
+  border: 1px solid #000; /* Bordure de chaque section */
+  border-radius: 10px; /* Bordures arrondies de chaque section */
+  background-color: #02ACAB;
+}
+
+.video{
+  text-align: center;
+  border-radius:;
+  background-color :aqua;
+}
+
+.pink{
+  color: #F76474;
+}
+
+.yellow{
+  color: #FDA900;
+}
+
+.green{
+  color: #03B4AC;
+}
+
+.boutton2{
+  text-align: center;
+  border: #000;
+  border-radius: 10px;
+}
+
+.boutton3{
+  text-align: center;
+  border: #000;
+  border-radius: 20px;
+}
+
+.qw{
+  color: #9e9b9b  ;
+ 
+  width: fit-content;
+    height: fit-content;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  flex: 3; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+ /* margin: 10px; Espace extérieur de chaque section*/
+  border: 2.5px solid #ffffff;
+  ; /* Bordure de chaque section */
+  border-radius: 20px; /* Bordures arrondies de chaque section */
+  background-color: #B2B3AE ;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.video2{
+  margin: auto;
+  position: relative;
+  transform: translate(25%, 0%);
+}
+
+.qw1{
+  color: #ABABAB  ;
+ 
+  width: fit-content;
+    height: fit-content;
+  text-align: center;
+  margin: auto;
+  
+  margin-bottom: 10px;
+  flex: 3; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+ /* margin: 10px; Espace extérieur de chaque section*/
+  border: 2.5px solid #ECECEC;
+  ; /* Bordure de chaque section */
+  border-radius: 20px; /* Bordures arrondies de chaque section */
+  background-color: #FAABE5 ;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.qw2{
+  color: #000000  ;
+ 
+  width: fit-content;
+    height: fit-content;
+  text-align: center;
+  margin: auto;
+  
+  margin-bottom: 10px;
+  flex: 3; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+ /* margin: 10px; Espace extérieur de chaque section*/
+  border: 2.5px solid #ECECEC;
+  ; /* Bordure de chaque section */
+  border-radius: 20px; /* Bordures arrondies de chaque section */
+  background-color: #9E35F4 ;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.az{
+  font-size: 14px;
+}
+
+
+.Join{
+  color: black ;
+ 
+  width: fit-content;
+    height: fit-content;
+  margin: auto;
+  flex: 3; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+ /* margin: 10px; Espace extérieur de chaque section*/
+  border: 2.5px solid #90C8F7;
+  ; /* Bordure de chaque section */
+  border-radius: 20px; /* Bordures arrondies de chaque section */
+  background-color: #ffffff;
+}
+.boutton{
+  text-align: center;
+  border: #000;
+  border-radius: 10px;
+}
+
+.container55 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.image1, .image2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.image1 {
+  z-index: 1;
+}
+.image2 {
+  z-index: 2;
+}
+
+
+
+.panel2 {
+  height: 500px;
+  width: 90%;
+  padding top: 250%;: auto;
+  flex: 1; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+  margin: 10px; /* Espace extérieur de chaque section */
+  border: 1px solid #000; /* Bordure de chaque section */
+  border-radius: 10px; /* Bordures arrondies de chaque section */
+  background-color: #E2E2E2;
+}
+
+.fa {
+  font-size: 50px;
+  color: #3B5998;
+}
+
+.monImageSvg {
+  width: 50%;
+  height: auto;
+}
+
+.Presale{
+  color: #A465F1;
+ 
+  width: fit-content;
+    height: fit-content;
+  text-align: center;
+  margin: auto;
+  flex: 3; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+ /* margin: 10px; Espace extérieur de chaque section*/
+  border: 2.5px solid #A465F1; /* Bordure de chaque section */
+  border-radius: 20px; /* Bordures arrondies de chaque section */
+  background-color: #fff;
+}
+
+.Transform{
+
+  text-align: center;
+}
+
+.video2{
+  width: fit-content;
+  flex: 1; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 0px; /* Espace intérieur de chaque section */
+  margin: 0px; /* Espace extérieur de chaque section */
+  border: 5px solid #000; /* Bordure de chaque section */
+  border-radius: 10px; /* Bordures arrondies de chaque section */
+  background-color: #E2E2E2;
+}
+
+.imageend{
+
+  text-align: center;
+  width: 100%;
+  height: 1000%;
+}
+
+.img2{
+  background-image: url("1.webp");
+  background-size: cover;
+  /* width: 70% */
+  width: 50%;
+  height: 70%;
+}
+
+
+
+.imageend{
+  display: block;
+  width: 1000px;
+  height: 550px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.image-container2 {position: relative;
+  text-align: center;
+  color: black ;
+ 
+  width: fit-content;
+    height: fit-content;
+  text-align: center;
+  margin: auto;
+  flex: 3; /* Pour que chaque section prenne un tiers de l'espace */
+  padding: 10px; /* Espace intérieur de chaque section */
+ /* margin: 10px; Espace extérieur de chaque section*/
+  border: 2.5px solid #000000;
+  ; /* Bordure de chaque section */
+  border-radius: 20px; /* Bordures arrondies de chaque section */
+  background-color: #ffffff;
+  
+}
+.text-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+.text-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+
+.green{
+  
+  width: 390px;
+  height: 550px;
+ 
+  text-align: center;
+
+
+}
+
+
+.green{
+  
+  width: 390px;
+  height: 550px;
+ 
+  text-align: center;
+
+
+}
+
+.orange{
+  width: 390px;
+  height: 550px;
+ 
+  text-align: center;
+}
+
+.pink{
+  width: 400px;
+  height: 550px;
+ 
+  text-align: center;
+}
+
+.qwer{
+  font-size: 40px;
+  text-align: center;
+}
+.imgfond{
+  width: auto;
+  height: ;
+ 
+  text-align: center;
+}
+
+.mecs2{
+  border: 1px solid black;
+  background-image: url("mecs.webp");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;   
+}
+
+.panel2{
+  border: 1px solid black;
+  /* background-image: url("mecs.webp"); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  overflow: hidden;
+  
+
+}
+
+.pannel2-1{
+  
+  width: 50%;
+}
+.pannel2-2{
+  height: 120%;
+  padding-top: -35%;
+  width: 100%;
+  z-index: -10; 
+  margin-bottom:15% ;
+  margin-top: -55%;
+  text-align: center;
+ 
+}
+.grid-itema{
+  background-image: url("1.webp");
+  background-size: cover; 
+  height: 14rem; 
+  
+
+}
+
+.grid-item4{
+  background-image: url("2.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+
+.grid-item5{
+  background-image: url("3.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+.grid-item6{
+  background-image: url("4.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+
+.grid-item7{
+  background-image: url("4.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+
+.grid-item8{
+  background-image: url("4.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+
+.grid-item9{
+  background-image: url("4.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+
+.grid-item10{
+  background-image: url("4.webp");
+  background-size: cover; 
+  height: 14rem; 
+}
+
+.text-bottom{
+  color: #ECDD50;
+}
+
+.text-top{
+  color: #ECDD50
+}
+
+.disp{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+
+ .left{
+  width: 50%;
+  background-image: url("livre\ \(2\).webp");
+  background-size: cover;
+  border-radius: 20px;
+
+  & img{
+    width: 90%;
+  }
+ }
+ .right{
+  width: 50%;
+  padding: 20px;
+
+  & .grille-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+    & h1{
+      text-align: left;
+    }
+  }
+ }
+}
+
+.azw{
+  height: auto;
+  padding-top: -0%;
+  width: 40%;
+  z-index: 0; 
+  /* margin-bottom:25% ; */
+  margin-top: -50%;
+  margin-left: 50%;
+  /* top: 15px; */
+  
+
+}
